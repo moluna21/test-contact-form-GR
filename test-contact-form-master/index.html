@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Test - Contact Form</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/form-validation.js"></script>
+</head>
+<body>
+		<div class="wrapper">
+				<form id="contactForm" class="contact-form">
+						<h1 class="title">Contact form</h1>
+						<div class="contact-form-body">
+							<div class="contact-form-container">
+								<h2 class="subtitle">Your details</h2>
+								<div class="contact-form-section">
+									<div class="contact-form-section-group">
+										<div class="contact-form-group">
+											<label></label>
+											<div class="contact-form-group-control">
+												<input id="name" class="contact-form-control value-form" type="text" name="first name" value="" placeholder="First Name" required />
+												<div class="contact-form-icon-valid"></div>
+											</div>
+											<div id="errorMessageName"></div>
+										</div>
+
+										<div class="contact-form-group">
+												<label></label>
+												<div class="contact-form-group-control">
+													<input id="lastName" class="contact-form-control value-form" type="text" name="last name" value="" placeholder="Last Name" required />
+													<div class="contact-form-icon-valid"></div>
+												</div>
+												<div id="errorMessageLastName"></div>
+										</div>
+									</div>
+
+									<div class="contact-form-section-group">
+										<div class="contact-form-group">
+												<label></label>
+												<div class="contact-form-group-control">
+													<input id="email" class="contact-form-control value-form" type="email" name="email" value="" placeholder="Email" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required />
+													<div class="contact-form-icon-valid"></div>
+												</div>
+												<div id="errorMessageEmail"></div>
+										</div>
+
+										<div class="contact-form-group">
+												<label></label>
+												<input id="phone" class="contact-form-control value-form" type="tel" name="phone" value="" placeholder="Telephone - optional" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="contact-form-container">
+									<h2 class="subtitle">Your message</h2>
+									<textarea id="textareaMessage" class="value-form" name="message" value="textareaMessage" placeholder="Message" required></textarea>
+									<div id="errorMessageTextarea"></div>
+							</div>
+						</div>
+						<div class="contact-form-footer">
+								<div class="checkbox">
+									<div class="checkbox-group">
+										<input id="termsPrivacy" type="checkbox" name="checkboxTermsPrivacy" value="checkTermsPrivacy" required />
+										<div id="checkboxMark" class="checkbox-mark" for="checkboxTermsPrivacy"></div>
+										<label>I accept the <a>Terms & Conditions</a> and have read the <a>Privacy Policy</a></label>
+									</div>
+									<div id="errorMessageTermsPrivacy"></div>
+								</div>
+								<!--<input class="button" id="send" type="submit" value="send">-->
+								<button id="send" type="submit" value="" onclick="resultsForm()">Send</button>
+						</div>
+				</form>
+		</div>
+</body>
+</html>
