@@ -65,7 +65,6 @@ function validationTextareaMessage(){
 }
 
 
-
 function validationTermsPrivacy(){
 	var termsPrivacy = document.getElementById('termsPrivacy');
 	var errorTermsPrivacy = document.getElementById('errorMessageTermsPrivacy');
@@ -102,6 +101,7 @@ function validar(e){
 	}
 }
 
+
 function resultsForm(){
 	//NOTE: Done with Json
 	var name = document.getElementById('name').value;
@@ -130,7 +130,6 @@ function resultsForm(){
 		message: inputsValues[4].value
 	}
 	console.log(listValues);*/
-
 }
 
 
